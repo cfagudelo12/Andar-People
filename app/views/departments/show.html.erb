@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @department.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @department.description %>
+</p>
+
+<p>
+  <strong>Repository url:</strong>
+  <%= @department.repository_url %>
+</p>
+
+<p>
+  <strong>Repository user:</strong>
+  <%= @department.repository_user %>
+</p>
+
+<p>
+  <strong>Repository password:</strong>
+  <%= @department.repository_password %>
+</p>
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>

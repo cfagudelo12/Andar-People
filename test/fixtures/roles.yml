@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  max_hourly_intensity: 1
+  min_hourly_intensity: 1
+
+two:
+  title: MyString
+  description: MyText
+  max_hourly_intensity: 1
+  min_hourly_intensity: 1

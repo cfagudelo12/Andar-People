@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @role.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @role.description %>
+</p>
+
+<p>
+  <strong>Max hourly intensity:</strong>
+  <%= @role.max_hourly_intensity %>
+</p>
+
+<p>
+  <strong>Min hourly intensity:</strong>
+  <%= @role.min_hourly_intensity %>
+</p>
+
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>
