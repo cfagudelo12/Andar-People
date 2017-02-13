@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :identification_type
       t.integer :student_code
       t.string :email
-      t.string :phone
+      t.integer :phone
       t.binary :photo
       t.integer :semester
       t.text :careers
