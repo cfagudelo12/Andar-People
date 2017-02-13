@@ -15,5 +15,15 @@
   <%= @observation.positive %>
 </p>
 
+<p>
+  <strong>User:</strong>
+  <%= @observation.user_id %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @observation.author_id %>
+</p>
+
 <%= link_to 'Edit', edit_observation_path(@observation) %> |
 <%= link_to 'Back', observations_path %>

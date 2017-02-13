@@ -17,7 +17,7 @@ class ObservationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create observation" do
     assert_difference('Observation.count') do
-      post observations_url, params: { observation: { comment: @observation.comment, date: @observation.date, positive: @observation.positive } }
+      post observations_url, params: { observation: { author_id: @observation.author_id, comment: @observation.comment, date: @observation.date, positive: @observation.positive, user_id: @observation.user_id } }
     end
 
     assert_redirected_to observation_url(Observation.last)
@@ -34,7 +34,7 @@ class ObservationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update observation" do
-    patch observation_url(@observation), params: { observation: { comment: @observation.comment, date: @observation.date, positive: @observation.positive } }
+    patch observation_url(@observation), params: { observation: { author_id: @observation.author_id, comment: @observation.comment, date: @observation.date, positive: @observation.positive, user_id: @observation.user_id } }
     assert_redirected_to observation_url(@observation)
   end
 
