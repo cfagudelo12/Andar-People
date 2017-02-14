@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  start_date: 2017-02-11
-  finish_date: 2017-02-11
+  start_date: 2017-02-13
+  finish_date: 2017-02-13
+  role_id: 1
+  department_id: 1
+  user_id: 1
 
 two:
-  start_date: 2017-02-11
-  finish_date: 2017-02-11
+  start_date: 2017-02-13
+  finish_date: 2017-02-13
+  role_id: 1
+  department_id: 1
+  user_id: 1
