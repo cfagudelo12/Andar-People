@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :identification_type %>
-    <%= f.text_field :identification_type %>
+    <%= f.select :identification_type, User.identification_types %>
   </div>
 
   <div class="field">
@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, placeholder: "@uniandes.edu.co" %>
   </div>
 
   <div class="field">
