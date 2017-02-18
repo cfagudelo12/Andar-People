@@ -1,6 +1,6 @@
 <%= form_for(user) do |f| %>
   <% if user.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger" role="alert">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
@@ -13,55 +13,58 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, { class: "form-control", required: true } %>
   </div>
 
   <div class="field">
     <%= f.label :identification %>
-    <%= f.text_field :identification %>
+    <%= f.number_field :identification, { class: "form-control", required: true } %>
   </div>
 
-  <div class="field">
-    <%= f.label :identification_type %>
-    <%= f.select :identification_type, User.identification_types %>
-  </div>
+    <div class="field">
+      <%= f.label :identification_type %>
+      <%= f.select :identification_type, User.identification_types, {}, { class: "form-control" } %>
+    </div>
 
   <div class="field">
     <%= f.label :student_code %>
-    <%= f.text_field :student_code %>
+    <%= f.number_field :student_code, { class: "form-control", required: true } %>
   </div>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email, placeholder: "@uniandes.edu.co" %>
-  </div>
+    <div class="field">
+      <%= f.label :email %>
+      <div class="input-group">
+        <%= f.text_field :email, { class: "form-control", required: true } %>
+        <span class="input-group-addon">@uniandes.edu.co</span>
+      </div>
+    </div>
 
   <div class="field">
     <%= f.label :phone %>
-    <%= f.text_field :phone %>
+    <%= f.number_field :phone, { class: "form-control", required: true } %>
   </div>
 
   <div class="field">
     <%= f.label :photo %>
-    <%= f.text_field :photo %>
+    <%= f.file_field :photo %>
   </div>
 
   <div class="field">
     <%= f.label :semester %>
-    <%= f.number_field :semester %>
+    <%= f.number_field :semester, { class: "form-control", required: true } %>
   </div>
 
   <div class="field">
     <%= f.label :careers %>
-    <%= f.text_area :careers %>
+    <%= f.select :careers, User.careers_list, {}, { class: "form-control" } %>
   </div>
 
   <div class="field">
     <%= f.label :volunteering_agreement %>
-    <%= f.text_field :volunteering_agreement %>
+    <%= f.file_field :volunteering_agreement %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create', { class: "btn btn-default" } %>
   </div>
 <% end %>

@@ -7,10 +7,10 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.integer :student_code
       t.string :email
       t.integer :phone
-      t.binary :photo
+      t.string :photo
       t.integer :semester
       t.text :careers
-      t.binary :volunteering_agreement
+      t.string :volunteering_agreement
 
       t.timestamps
     end

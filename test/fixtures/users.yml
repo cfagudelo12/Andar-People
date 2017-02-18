@@ -2,24 +2,24 @@
 
 one:
   name: MyString
-  identification: 
+  identification: 1
   identification_type: MyString
-  student_code: 
+  student_code: 1
   email: MyString
-  phone: MyString
-  photo: 
+  phone: 1
+  photo: MyString
   semester: 1
   careers: MyText
-  volunteering_agreement: 
+  volunteering_agreement: MyString
 
 two:
   name: MyString
-  identification: 
+  identification: 1
   identification_type: MyString
-  student_code: 
+  student_code: 1
   email: MyString
-  phone: MyString
-  photo: 
+  phone: 1
+  photo: MyString
   semester: 1
   careers: MyText
-  volunteering_agreement: 
+  volunteering_agreement: MyString
