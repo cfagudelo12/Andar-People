@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name, { class: "form-control", required: true } %>
+    <%= f.text_field :name, { class: "form-control", placeholder: "Nombre", required: true } %>
   </div>
 
   <div class="field">
     <%= f.label :identification %>
-    <%= f.number_field :identification, { class: "form-control", required: true } %>
+    <%= f.number_field :identification, { class: "form-control", placeholder: "Identificación", required: true } %>
   </div>
 
     <div class="field">
@@ -28,20 +28,20 @@
 
   <div class="field">
     <%= f.label :student_code %>
-    <%= f.number_field :student_code, { class: "form-control", required: true } %>
+    <%= f.number_field :student_code, { class: "form-control", placeholder: "Código de estudiante", required: true } %>
   </div>
 
     <div class="field">
       <%= f.label :email %>
       <div class="input-group">
-        <%= f.text_field :email, { class: "form-control", required: true } %>
+        <%= f.text_field :email, { class: "form-control", placeholder: "Usuario Uniandes", required: true } %>
         <span class="input-group-addon">@uniandes.edu.co</span>
       </div>
     </div>
 
   <div class="field">
     <%= f.label :phone %>
-    <%= f.number_field :phone, { class: "form-control", required: true } %>
+    <%= f.number_field :phone, { class: "form-control", placeholder: "Teléfono celular", required: true } %>
   </div>
 
   <div class="field">
@@ -51,12 +51,12 @@
 
   <div class="field">
     <%= f.label :semester %>
-    <%= f.number_field :semester, { class: "form-control", required: true } %>
+    <%= f.number_field :semester, { class: "form-control", placeholder: "Semestre", required: true } %>
   </div>
 
   <div class="field">
     <%= f.label :careers %>
-    <%= f.select :careers, User.careers_list, {}, { class: "form-control" } %>
+    <%= f.select :careers, User.careers_list, { include_hidden: false }, { class: "form-control", multiple: true, required: true } %>
   </div>
 
   <div class="field">
