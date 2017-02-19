@@ -28,7 +28,7 @@
         <td><%= user.student_code %></td>
         <td><%= user.email %></td>
         <td><%= user.phone %></td>
-        <td><%= user.photo %></td>
+        <td><img src="<%= user.photo %>"></td>
         <td><%= user.semester %></td>
         <td><%= user.careers %></td>
         <td><%= link_to 'Download', download_volunteering_agreement_user_path(user) %></td>
